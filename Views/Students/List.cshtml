@@ -1,0 +1,33 @@
+﻿@model List<crud_student_portal_with_sameer_saini.Models.Entities.Student>
+
+<h1>Students</h1>
+
+<div class="mb-3">
+    <a class="btn btn-success" asp-controller="Students" asp-action="Add">Add Student</a>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model)
+        {
+            <tr>
+                <td>@student.Id</td>
+                <td>@student.Name</td>
+                <td>@student.Phone</td>
+                <td>@student.Email</td>
+                <td>
+                    <a class="btn btn-primary" asp-controller="Students" asp-action="Edit" asp-route-id="@student.Id">Edit</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

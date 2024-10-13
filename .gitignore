@@ -1,0 +1,55 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# Roslyn cache directories
+*.ide/
+
+# User-specific files
+*.rsuser
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+*.sln.iml
+
+# ASP.NET Core
+appsettings.*.json
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# DotNet
+*.dbmdl
+*.dbproj.schemaview
+*.pdb
+*.mdb
+*.opendb
+*.opendb.lock
+*.opendb-shm
+*.opendb-wal
+
+# Npm
+node_modules/
+
+# Yarn
+.yarn/
+.yarnrc.yml
+.pnp.*
